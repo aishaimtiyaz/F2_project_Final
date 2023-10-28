@@ -9,6 +9,8 @@ const clearCanvas = document.getElementById("clearBtn");
 const clearCanvas1 = document.getElementById("clearBtn1");
 const saveBtn = document.getElementById("saveBtn");
 const saveBtn1 = document.getElementById("saveBtn1");
+const darkMode = document.getElementById("tbtn");
+
 
 function clearCan() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -20,6 +22,12 @@ const link = document.createElement("a");
   link.href = canvas.toDataURL();
   link.click();
 }
+darkMode.addEventListener("click",()=>{
+    var element = document.body;    
+    element.classList.toggle("darkMode");
+    
+});
+
 
 picker.addEventListener("click", () => {
   colorPicker.classList.toggle("disp");
@@ -49,6 +57,7 @@ themeColor.addEventListener("input", () => {
   chooseTheme.style.background = themeColor.value;
   clearCan();
 });
+
 
 clearCanvas.addEventListener("click", clearCan);
 clearCanvas1.addEventListener("click", clearCan);

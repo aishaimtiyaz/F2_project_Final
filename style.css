@@ -46,23 +46,38 @@
   /* z-index: 1 !important; */
 }
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a{
   color: black ;
   padding: 5px 10px ;
   font-size: small ;
   text-decoration: none ;
   display: block !important;
 }
+#myFile,#tbtn{
+  color: black ;
+  padding: 5px 10px ;
+  font-size: small ;
+  text-decoration: none ;
+  display: block;
+  border: none;
+  background-color: white;
+}
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f2f2f2 !important;}
-.dropdown-content #clearBtn1:hover {
+.dropdown-content #clearBtn1:hover,#tbtn:hover {
   background-color: #f2f2f2 !important;}
-.dropdown-content #saveBtn1:hover {
+
+.dropdown-content #saveBtn1:hover,#myFile:hover {
   background-color: #f2f2f2 !important;}
 
 .show {display:block !important;}
+
+.darkMode {
+    background-color: black;
+    color: white !important;
+  }
 
 .color-picker>button>div{
     width:18px ;

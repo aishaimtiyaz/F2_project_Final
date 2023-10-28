@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Excalidraw</title>
 </head>
-<body>
-    <div id="container">
-        <div id="top">
+<body >
+    <div id="container" >
+        <div id="top" >
             <button id="menuBtn" class="material-icons menu btn">menu</button>
             <!-- sep -->
             <div class="dropdown-content" id="myDropdown" >
-                <a href="#"><i class="fa-regular fa-folder" style="color: #050910;"></i> Open</a>
+                <label for="myfile" id="myFile"><i class="fa-regular fa-folder" style="color: #050910;"></i> <input type="file" id="myfile" name="myfile" multiple="multiple"></label>
                 <button id="saveBtn1" style="background-color: white;border: none;padding: 5px 10px ;font-size: small ;"><i class="fa-solid fa-download" style="color: #080d17;"></i> Save to...</button>
 
                 <a href="#"><img src="./Assets/imageExport2.png" alt="export image" width="18px" height="18px"> Export Image</a>
@@ -28,12 +28,13 @@
                 <button id="clearBtn1" style="background-color: white;border: none;padding: 5px 10px ;font-size: small ;"><img src="./Assets/delete.png" alt="Reset" width="18px" height="18px" >Reset the canvas</button>
                 <!-- <button class="clearBtn">< img src="./Assets/delete.png" alt="Reset"width="18px" height="18px"> Reset the canvas</button> -->
                 <div class="hr"></div>
-                <a href="#" style="color: rgb(250, 126, 165);"><img src="./Assets/gift.png" alt="export image" width="18px" height="18px"> Excalidraw+</a>
-                <a href="#"><img src="./Assets/github.png" alt="Github image" width="18px" height="18px"> GitHub</a>
-                <a href="#"><img src="./Assets/discord.png" alt="Discord Image" width="18px" height="18px"> Discord</a>
-                <a href="#"><img src="./Assets/twitter.png" alt="Twitter Image"width="18px" height="18px"> Twitter</a>
+                <a href="https://plus.excalidraw.com/plus/?utm_source=excalidraw&utm_medium=app&utm_content=hamburger" target="_blank" style="color: rgb(250, 126, 165);"><img src="./Assets/gift.png" alt="export image" width="18px" height="18px"> Excalidraw+</a>
+                <a href="https://github.com/excalidraw/excalidraw" target="_blank"><img src="./Assets/github.png" alt="Github image" width="18px" height="18px"> GitHub</a>
+                <a href="https://discord.com/invite/UexuTaE" target="_blank"><img src="./Assets/discord.png" alt="Discord Image" width="18px" height="18px"> Discord</a>
+                <a href="https://twitter.com/excalidraw" target="_blank"><img src="./Assets/twitter.png" alt="Twitter Image"width="18px" height="18px"> Twitter</a>
                 <div class="hr"></div>
-                <a href="#"><img src="./Assets/darkMode.png" alt="dark Mode"width="18px" height="18px"> Dark mode</a>
+
+                <button id="tbtn"><img src="./Assets/darkMode.png" alt="dark Mode"width="18px" height="18px"> Dark mode </button>
 
                 <select class="dropdown-select dropdown-select__language px-2 mx-2 " aria-label="Select language" style="width: 80%;font-size: small;">
                     <option value="en">English</option><option value="id-ID">Bahasa Indonesia</option><option value="ca-ES">Català</option><option value="de-DE">Deutsch</option><option value="es-ES">Español</option><option value="eu-ES">Euskara</option><option value="fr-FR">Français</option><option value="gl-ES">Galego</option><option value="it-IT">Italiano</option><option value="ku-TR">Kurdî</option><option value="lv-LV">Latviešu</option><option value="nb-NO">Norsk bokmål</option><option value="oc-FR">Occitan</option><option value="pl-PL">Polski</option><option value="pt-PT">Português</option><option value="pt-BR">Português Brasileiro</option><option value="ro-RO">Română</option><option value="sk-SK">Slovenčina</option><option value="sl-SI">Slovenščina</option><option value="fi-FI">Suomi</option><option value="sv-SE">Svenska</option><option value="kab-KAB">Taqbaylit</option><option value="tr-TR">Türkçe</option><option value="cs-CZ">Česky</option><option value="el-GR">Ελληνικά</option><option value="ru-RU">Русский</option><option value="uk-UA">Українська</option><option value="he-IL">עברית</option><option value="fa-IR">فارسی</option><option value="mr-IN">मराठी</option><option value="pa-IN">ਪੰਜਾਬੀ</option><option value="ja-JP">日本語</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="ko-KR">한국어</option>
@@ -41,7 +42,7 @@
 
                 <div class="canvasBackground p-2" style="font-size: small; color: grey; ">Canvas Background</div>
                 <div class="color-picker d-flex justify-content-around m-3">
-                    <button > 
+                    <button id="bttn1"> 
                         <div class="color-pick" style=" background-color: #ffffff;"> </div> 
                     </button>
                         <button><div class="color-pick" style=" background-color: #f8f9fa;"> </div></button> 
@@ -139,5 +140,7 @@
     <script src="resize.js"></script>
     <script src="touchMotions.js"></script>
     <script src="undoredo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
